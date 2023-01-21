@@ -48,7 +48,7 @@ export const VerifyOtp = () => {
     console.log(state);
     formData.customerId = state.customerId;
     axios
-      .post("https://backend-nzz3.onrender.com/api/so", formData)
+      .post("https://gunda.onrender.com/api/so", formData)
       .then((response) => {
         if (response.status === 200) {
           navigate("/verify/pan", {
